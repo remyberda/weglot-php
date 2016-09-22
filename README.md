@@ -1,2 +1,2 @@
 # weglottranslation-php
-The library to integrate to PHP
+The library to integrate Weglot translation to PHP
