@@ -1,7 +1,7 @@
 <?php
 
-require_once 'src/WG.php';
-require_once 'src/WGClient.php';
-require_once 'src/simple_html_dom.php';
-require_once 'src/WGUtils.php';
-require_once 'src/WeglotException.php';
+require(dirname(__FILE__) . '/lib/WG.php');
+require(dirname(__FILE__) . '/lib/WGClient.php');
+require(dirname(__FILE__) . '/lib/simple_html_dom.php');
+require(dirname(__FILE__) . '/lib/WGUtils.php');
+require(dirname(__FILE__) . '/lib/WeglotException.php');
