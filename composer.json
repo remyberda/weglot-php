@@ -1,4 +1,15 @@
 {
-    "name": "weglot/weglottranslation-php",
-    "description": "The library to integrate Weglot translation to PHP"
+	"name": "weglot/weglot-php",
+    	"description": "The library to integrate Weglot translation to PHP",
+	"keywords": [
+     	  "Weglot",
+    	  "PHP translation",
+	  "api"
+	],
+	"homepage": "https://weglot.com/",
+	"autoload": {
+        "psr-4": {
+            "Weglot\\": "lib/"
+        }
+    }
 }
