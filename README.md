@@ -24,7 +24,7 @@ Enter Weglot initialization code at the beginning of the execution (Usually inde
 require __DIR__ . '/vendor/autoload.php';
 // if you are not using composer: require_once 'path/to/weglot.php';
 
-$WG = new \Weglot\WG(array(
+new \Weglot\WG(array(
 	"api_key" =>"YOUR API KEY", // The api key, you can get one on https://weglot.com/registe
 	"original_l" =>"en", // the original language of your website
 	"destination_l" =>"fr,de", // the languages you want to translate your website into
