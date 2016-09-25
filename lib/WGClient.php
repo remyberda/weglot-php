@@ -1,6 +1,8 @@
 <?php
 namespace Weglot;
 
+require(dirname(__FILE__) . '/simple_html_dom.php');
+
 class WGClient 
 {
 	protected $api_key;
@@ -299,7 +301,7 @@ class WGClient
 		return $this->url_origin($s, $use_forwarded_host) . $s['REQUEST_URI'];
 	}
 	function full_trim($word) {
-		return trim($word," \t\n\r\0\x0B\xA0 ");
+		return trim($word," \t\n\r\0\x0B\xA0Â ");
 	}
 }
 
