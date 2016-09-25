@@ -1,6 +1,8 @@
 <?php
 namespace Weglot;
 
+define('WEGLOT_VERSION', '1.0.0');
+
 class WG
 {
 	protected $api_key;
