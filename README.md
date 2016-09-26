@@ -15,7 +15,7 @@ composer require weglot/weglot-php
 (If you don't use Composer, you can copy the `weglot.php` file and the `lib` directory to your project).
 
 ### Initialize
-To initialize Weglot, you need your API Key. You can find it on [your Weglot account](https://weglot.com/account).
+To initialize Weglot, you need your API Key. You can find it on [your Weglot account](https://weglot.com/register?s=git).
 
 Enter Weglot initialization code at the beginning of the execution (Usually index.php or app.php)
 
