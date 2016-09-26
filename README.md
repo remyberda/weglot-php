@@ -12,7 +12,7 @@ Install the package via [Composer](https://getcomposer.org/doc/00-intro.md):
 composer require "weglot/weglot-php":"dev-master"
 ```
 
-If you don't use Composer, you can copy the `weglot.php` file and the `lib` directory to your project).
+(If you don't use Composer, you can copy the `weglot.php` file and the `lib` directory to your project).
 
 ### Initialize
 To initialize Weglot, you need your API Key. You can find it on [your Weglot account](https://weglot.com/account).
@@ -72,7 +72,7 @@ You can also customize it by adding some CSS rules on the button's element.
 Here is an example of initialization code
 
 ```php
-// Example : Your website is in french, and you want it also in english, german, japanese
+// Example : Your website is in French, and you want it also in English, German, Japanese
 
 new \Weglot\WG(array(
 	"api_key" =>"YOUR API KEY", // The api key, you can get one on https://weglot.com/register
