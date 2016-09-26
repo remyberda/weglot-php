@@ -9,7 +9,7 @@ The library to integrate Weglot translation to a PHP website
 Install the package via [Composer](https://getcomposer.org/doc/00-intro.md):
 
 ```bash
-composer require "weglot/weglot-php":"dev-master"
+composer require weglot/weglot-php
 ```
 
 (If you don't use Composer, you can copy the `weglot.php` file and the `lib` directory to your project).
