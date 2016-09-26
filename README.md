@@ -33,3 +33,20 @@ new \Weglot\WG(array(
 
 ### Check it works !
 Now, when you go on your website, you should see a country selector with flags at the bottom right of your website.
+
+### Parameters
+
+#### Required
+`api_key` - A string that gives you access to Weglot sevices. You can get one by [creating an account](https://weglot.com/register)
+`original_l` - The language of your original website. Enter the two letter code. The list of code is available [here](https://weglot.com/translation-api)
+`destination_l` - The languages you want to translate into. Enter the two letter codes separated by commas.
+
+#### Optional
+`buttonOptions` - An array of paramters to customize the language button design
+	`is_dropdown` - 
+	`with_name`
+	`fullname`
+	`with_flags`
+	`type_flags`
+	
+#### Examples
