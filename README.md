@@ -34,6 +34,8 @@ new \Weglot\WG(array(
 ### Check it works !
 Now, when you go on your website, you should see a country selector with flags at the bottom right of your website.
 
+## Customize
+
 ### Button position
 By default, the language button appears as fixed, at the bottom right of your website.
 But you can make it appear wherever you want in your HTML page. Just enter `<div id="weglot_here"></div>` in your HTML wherever you want the button to be.
@@ -82,7 +84,7 @@ new \Weglot\WG(array(
 ));
 ```
 
-### Troubleshooting
+## Troubleshooting
 Once you save the initialization code, you should see the language button appear at the bottom right of your website.
 
 If that is not the case, it means the Weglot code is not running. Check if you have PHP errors
