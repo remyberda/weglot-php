@@ -25,7 +25,7 @@ require __DIR__ . '/vendor/autoload.php';
 // if you are not using composer: require_once 'path/to/weglot.php';
 
 new \Weglot\WG(array(
-	"api_key" =>"YOUR API KEY", // The api key, you can get one on https://weglot.com/registe
+	"api_key" =>"YOUR API KEY", // The api key, you can get one on https://weglot.com/register
 	"original_l" =>"en", // the original language of your website
 	"destination_l" =>"fr,de", // the languages you want to translate your website into
 ));
