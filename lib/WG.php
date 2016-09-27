@@ -86,6 +86,8 @@ class WG
 				$button = WGUtils::str_lreplace('<aside id="weglot_switcher" wg-notranslate class="','<aside id="weglot_switcher" wg-notranslate class="wg-default ',$button);
 				$final = (strpos($final, '</body>') !== false) ? WGUtils::str_lreplace('</body>',$button.' </body>',$final):WGUtils::str_lreplace('</footer>',$button.' </footer>',$final);
 			}
+			$length = strlen($final);
+			header('Content-Length: '.$length);
 			return $final;
 		}
 		else {
