@@ -97,7 +97,7 @@ class WG
 				$final = (strpos($final, '</body>') !== false) ? WGUtils::str_lreplace('</body>',$button.' </body>',$final):WGUtils::str_lreplace('</footer>',$button.' </footer>',$final);
 			}
 			$length = strlen($final);
--			header('Content-Length: '.$length);
+			header('Content-Length: '.$length);
 			return $final;
 		}
 		else {
