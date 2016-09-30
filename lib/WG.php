@@ -17,7 +17,7 @@ class WG
 
 	const API_URL = 'https://weglot.com/api/v2/translate';
 	
-	function __construct($options) {
+	private function __construct($options) {
 		
 
 		$this->api_key 			= $options['api_key'];
@@ -38,6 +38,16 @@ class WG
 			$_SERVER['REQUEST_URI'] = str_replace('/'.$this->current_l,'',$this->o_request_uri);	
 		}
 		ob_start(array(&$this,'treatPage'));
+	}
+	
+	public static function Instance($options = "")
+	{
+		static $inst = null;
+		if($inst == null)
+		{
+			$inst = new WG($options);
+		}
+		return $inst;
 	}
 	
 	public function treatPage($final) {
