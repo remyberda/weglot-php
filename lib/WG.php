@@ -17,7 +17,7 @@ class WG
 
 	const API_URL = 'https://weglot.com/api/v2/translate';
 	
-	function __construct($options) {
+	private function __construct($options) {
 		
 
 		$this->api_key 			= $options['api_key'];
@@ -38,6 +38,16 @@ class WG
 			$_SERVER['REQUEST_URI'] = str_replace('/'.$this->current_l,'',$this->o_request_uri);	
 		}
 		ob_start(array(&$this,'treatPage'));
+	}
+	
+	public static function Instance($options = "")
+	{
+		static $inst = null;
+		if($inst == null)
+		{
+			$inst = new WG($options);
+		}
+		return $inst;
 	}
 	
 	public function treatPage($final) {
@@ -86,8 +96,6 @@ class WG
 				$button = WGUtils::str_lreplace('<aside id="weglot_switcher" wg-notranslate class="','<aside id="weglot_switcher" wg-notranslate class="wg-default ',$button);
 				$final = (strpos($final, '</body>') !== false) ? WGUtils::str_lreplace('</body>',$button.' </body>',$final):WGUtils::str_lreplace('</footer>',$button.' </footer>',$final);
 			}
-			$length = strlen($final);
-			header('Content-Length: '.$length);
 			return $final;
 		}
 		else {
